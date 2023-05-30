@@ -1,0 +1,368 @@
+/* GLOBAL */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+    flex-shrink: 0;
+    flex-grow: 0;
+}
+
+body {
+    background-color: rgba(0, 0, 0, 0.967);
+    color: rgb(255, 255, 255);
+}
+
+/* MAIN CONTENT */
+.body-container {
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    justify-content: center;
+}
+
+.home-container {
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, 0.252);
+    max-width: 100%;
+    width: 100%;
+    padding-bottom: 4rem;
+  }
+
+.logo-container {
+    max-height: 100%;
+    min-height: 300px;
+    min-width: 800px;
+    background-color: black;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.title {
+    font-size: 70px;
+    margin-right: 8rem;
+}
+
+.subtitle {
+    margin-left: 8rem;
+    font-size: 35px;
+}
+
+/* HERO-CONTAINER */
+.hero-container {
+    background-image: url(/images/happy_students1.jpg);
+    background-size: cover;
+    background-position: center;
+    min-height: 400px;
+    min-width: 100vh;
+    display: flex;
+}
+
+.left-container {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: 1rem;
+    margin-top: 18rem;
+
+    max-height: 50px;
+    max-width: 250px;
+
+    background-color: white;
+    border-radius: 10px;
+}
+
+.right-container {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-top: 18rem;
+    margin-right: 3rem;
+}
+
+.startedBtn {
+    background-color: rgb(166, 47, 47);
+    color: white;
+    border-radius: 10px;
+    font-size: 15px;
+    padding: 6px;
+}
+
+.hero-title {
+    color: black;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.hero-text {
+    color: black;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+/* CARDS */
+.bottom-container {
+    min-height: 450px;
+    min-width: 100vh;
+    display: flex;
+
+    margin-top: 4rem;
+    justify-content: space-between;
+
+}
+
+.about-us {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    min-width: 320px;
+    max-width: 320px;
+    min-height: 320px;
+    max-height: 320px;
+
+    margin-left: 2rem;
+    margin-right: 1.5rem;
+}
+
+.about-us img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.contact-us {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+
+    min-width: 320px;
+    max-width: 320px;
+    min-height: 320px;
+    max-height: 320px;
+
+    margin-left: 1.5rem;
+    margin-right: 2rem;
+}
+
+.contact-us img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.card {
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+}
+
+.card img {
+    width: 100%;
+    border-radius: 10px;
+    display: block;
+    transition: transform 0.5s;
+}
+
+.layer {
+    width: 100%;
+    height: 0;
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgb(166, 47, 47));
+    border-radius: 10px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    overflow: hidden;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 0 0px;
+    transition: height 0.5s;
+}
+
+.layer button {
+    margin-top: 20px;
+    color: rgb(166, 47, 47);
+    text-decoration: none;
+    font-size: 16px;
+    line-height: 60px;
+    background: #fff;
+    width: 120px;
+    height: 60px;
+    border-radius: 15%;
+}
+
+.card:hover img {
+    transform: scale(1.1);
+}
+
+.card:hover .layer {
+    height: 100%;
+}
+
+.btn:hover {
+    background: rgb(166, 47, 47);
+    color: white;
+}
+
+/* FOOTER */
+footer {
+    display: flex;
+    justify-content: space-around;
+    border-top: 1px solid rgba(0, 0, 0, 0.941);
+    padding-top: 3rem;
+    padding-bottom: 2rem;
+    background-color: rgb(33, 32, 32)
+}
+
+/* RESPONSIVE */
+@media screen and (max-width: 1000px) {
+    .home-container{
+        max-width: 650px;
+    }
+
+    .logo-container {
+        min-width: 100%;
+        max-width: 100%;
+        align-items: center;
+        text-align: center;
+    }
+
+    .title {
+        margin-right: 0rem;
+    }
+
+    .subtitle {
+        margin-left: 16rem;
+    }
+
+    .hero-container {
+        min-height: 400px;
+        max-width: 650px;
+        min-width: 650px;
+
+    }
+
+    .bottom-container {
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+        padding-bottom: 10rem;
+
+        max-width: 650px;
+    }
+
+    .about-us,
+    .contact-us {
+        width: 100%;
+        max-width: 400px;
+        position: relative;
+    }
+
+    .contact-us {
+        margin-top: 5rem;
+        margin-left: 3rem;
+    }
+
+    .about-us img,
+    .contact-us img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    footer {
+        margin-top: 0;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .home-container{
+        max-width: 385px;
+    }
+
+    .logo-container {
+        max-width: 100%;
+        align-items: center;
+        text-align: center;
+    }
+
+    .title {
+        margin-left: 0rem;
+        margin-right: 3rem;
+    }
+
+    .subtitle {
+        margin-left: 13rem;
+    }
+
+    .hero-container {
+        min-height: 300px;
+        max-width: 100%;
+        min-width: 380px;
+
+    }
+
+    .left-container {
+        margin-bottom: 1rem;
+        min-width: 200px;
+        min-height: 80px;
+    }
+    
+    .hero-text {
+        margin-left: .4rem;
+    }
+
+    .bottom-container {
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+        padding-bottom: 10rem;
+    }
+
+    .about-us,
+    .contact-us {
+        width: 100%;
+        max-width: 360px;
+        position: relative;
+        margin-right: 2.3rem;
+    }
+
+    .contact-us {
+        margin-top: 5rem;
+        margin-right: 3.3rem;
+
+    }
+
+    .about-us img,
+    .contact-us img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    footer {
+        margin-top: 0;
+    }
+}

@@ -1,0 +1,124 @@
+body {
+    background-color: black;
+    color: white;
+    font-family: Arial, sans-serif;
+    text-align: center;
+
+    min-height: 100vh;
+  }
+  
+  .login {
+    display: inline-block;
+    max-width: 300px;
+    margin-top: 100px;
+    padding: 30px;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 5px;
+    text-align: left;
+  }
+
+  .registrera{
+    display: none;
+    max-width: 300px;
+    margin-top: 100px;
+    padding: 30px;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 5px;
+    text-align: left;
+    margin-left: 33%;
+  }
+  button{
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 3px;
+    background-color: #35a935;
+    color: white;
+    cursor: pointer;
+    margin-top: 1rem;
+  }
+  
+  /* label {
+    display: block;
+    margin-bottom: 10px;
+  } */
+  
+  input[type="text"],
+  input[type="password"] {
+    width: 94%;
+    padding: 8px;
+    border: 1px solid #777;
+    border-radius: 3px;
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+    margin-bottom: 1rem;
+  }
+  
+  .submit {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 3px;
+    background-color: #4035a1;
+    color: white;
+    cursor: pointer;
+    margin-bottom: 2rem;
+    
+  }
+  .line {
+    position: relative;
+    margin: 0;
+    border-top: 1px solid #ffffff;
+   
+  }
+  .pp{
+    margin-top: 0;
+    font-size: smaller;
+  }
+  .createbutton{
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 3px;
+    background-color: #35a935;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+  }
+  
+ .submit:hover {
+    background-color: #777;
+  }
+
+  main {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #707070;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(117, 117, 117, 0.078);
+  }
+  
+  h2 {
+    color: #fffbfb;
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  p {
+    color: #fbfbfb;
+    line-height: 1.5;
+  }
+  
+  /* FOOTER */
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    border-top: 1px solid rgba(0, 0, 0, 0.941);
+    padding-top: 3rem;
+    padding-bottom: 2rem;
+    background-color: rgb(33, 32, 32);
+}
